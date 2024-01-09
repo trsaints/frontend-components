@@ -1,0 +1,171 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1.125rem;
+  background-color: gray;
+  padding-inline: 64px;
+}
+
+article {
+  margin-bottom: 64px;
+  isolation: isolate;
+}
+
+ul {
+  list-style: none;
+}
+
+.skill-card {
+  background-color: #28173d;
+  width: 14rem;
+  height: 13.75rem;
+  clip-path: polygon(00% 0%, 90% 0%, 100% 10%, 100% 100%, 0% 100%);
+  position: relative;
+  padding-inline: 1.125rem;
+}
+
+.skill-card::before {
+  width: 9.375rem;
+  height: 3rem;
+  background-color: #130b1d;
+  content: "";
+  display: block;
+  position: relative;
+  border: 0.25rem inset #0c0712;
+}
+
+.skill-card::after {
+  width: 7.75rem;
+  height: 2.625rem;
+  background-color: #d9d9d9;
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 1.375rem;
+}
+
+.skill-card__title,
+.skill-card__desc {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+
+.skill-card__title::before {
+  width: 1.5rem;
+  height: 2.1875rem;
+  content: "";
+  display: block;
+  background-color: #07040b;
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 1.75rem;
+}
+
+.skill-card__title {
+  padding: 0.5rem;
+  margin-top: 48px;
+  background-color: #3f3d56;
+  color: #fff;
+}
+
+.skill-card__desc {
+  height: 100%;
+  background-image: repeating-linear-gradient(
+    0deg,
+    #07040b,
+    #07040b 0.125rem,
+    transparent 0.125rem,
+    transparent
+  );
+  background-size: 1.5rem 1.5rem;
+  background-color: #b3b3b3;
+  font-size: 1.5rem;
+  border: 0.25rem inset #0c0712;
+  padding-top: 1.5rem;
+}
+
+.project {
+  background-image: url("./folder_bg.svg");
+  background-size: 400px;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 250px;
+  position: relative;
+  font-family: monospace;
+  color: white;
+  overflow: visible;
+}
+
+.project::before {
+  display: block;
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 3rem;
+  left: 2rem;
+  width: 100%;
+  height: 100%;
+  background-color: #a59eaf;
+  border: 4px outset #d8cee4;
+  box-shadow: 0 0 8px black, -1rem -1rem #28173d, -1rem -1rem 8px black;
+}
+
+.project::after {
+  display: block;
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 4.25rem;
+  left: 3.25rem;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  background-color: black;
+  border: 4px inset #d8cee4;
+}
+
+.project__title, .project__info {
+  position: inherit;
+  z-index: 10;
+  padding-left: 4.5rem;
+}
+
+.project__title {
+  padding-top: 5.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+}
+
+.project__title::before {
+  content: "./";
+}
+
+.project__title::after {
+  content: "_";
+}
+
+.project__info {
+  display: flex;
+  gap: 2rem;
+}
+
+.meta-data__key {
+  padding-bottom: .5rem;
+  margin-bottom: .5rem;
+  border-bottom: 2px dashed;
+}
+
+.meta-data__key::after {
+  content: ":";
+}
