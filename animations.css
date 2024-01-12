@@ -1,0 +1,5 @@
+.project-card:hover,
+.project-card2:hover,
+.window-frame:hover {
+  transform: scale(1.03);
+}
