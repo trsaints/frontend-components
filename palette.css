@@ -12,14 +12,14 @@
   --russian-violet-5: #442768ff;
 
   /* HIGHLIGHT COLOR */
---rose: #F72587ff;
---deep-pink: #F8318Dff;
---rose-bonbon: #F93C94ff;
---rose-bonbon-2: #FA489Aff;
---brilliant-rose: #FB53A0ff;
---brilliant-rose-2: #FB5FA7ff;
---hot-pink: #FC6AADff;
---hot-pink-2: #FD76B3ff;
---persian-pink: #FE81BAff;
---persian-pink-2: #FF8DC0ff;
+  --rose: #F72587ff;
+  --deep-pink: #F8328Eff;
+  --rose-bonbon: #F93F95ff;
+  --rose-bonbon-2: #FA4B9Cff;
+  --brilliant-rose: #FB58A3ff;
+  --hot-pink: #FB65AAff;
+  --hot-pink-2: #FC72B1ff;
+  --persian-pink: #FD7EB8ff;
+  --persian-pink-2: #FE8BBFff;
+  --carnation-pink: #FF98C6ff;
 }
