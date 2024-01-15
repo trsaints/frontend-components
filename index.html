@@ -32,14 +32,14 @@
       </div>
     </article>
 
-    <article class="window-frame project">
-      
-    </article>
+    <article class="window-frame"></article>
 
     <article class="window-frame skill">
-      <h3 class="skill__title">skill name</h3>
+      <header class="skill__header">
+        <h3 class="skill__title">skill name</h3>
 
-      <p class="skill__tag">hard skill</p>
+        <p class="skill__tag">hard skill</p>
+      </header>
 
       <p class="skill__desc">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
@@ -48,9 +48,49 @@
         doloribus nulla tenetur inventore?
       </p>
 
-      <picture  class="skill__banner">
-        <img src="./lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg" alt="">
+      <picture class="skill__banner">
+        <img src="./lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg" alt="" />
       </picture>
+    </article>
+
+    <article class="project">
+      <header class="project__header">
+        <h3 class="project__title">project name</h3>
+
+        <p class="project__year">
+          <span class="sr-only">criado em: </span>
+          
+          <time datetime="2024">2024</time>
+        </p>
+
+        <ul class="project__stacks">
+          <li class="project__stack">html</li>
+          <li class="project__stack">css</li>
+          <li class="project__stack">js</li>
+        </ul>
+
+        <menu class="project__menu">
+          <li class="project__option">
+            <button class="project__close">
+              <span class="sr-only">close</span>
+
+              <span aria-hidden="true">X</span>
+            </button>
+          </li>
+        </menu>
+      </header>
+
+      <p class="project__desc">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus qui
+        dolores dolor sunt laboriosam laborum, magni quaerat magnam voluptatem
+        praesentium commodi rerum, assumenda sed odio recusandae vel doloremque,
+        id labore?
+      </p>
+
+      <nav class="project__links">
+        <a href="" class="project__link">código fonte</a>
+        <a href="" class="project__link">deploy</a>
+      </nav>
     </article>
   </body>
 </html>
